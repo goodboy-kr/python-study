@@ -25,14 +25,14 @@ print(letters_join)		->abcd and efghijkl and mnopqrst and uvwxyz (분해된 리�
 
 문자열 다루기
 -------------
-1.길이
+1)길이
   len(letters)		->29	(공백과 콤마를 합한 문자열의 길이)
   
   len(letters_split)		->4	(리스트안의 개수)
   
   len(letters_join)		->41	(합쳐진 문자열의 길이-공백포함)
 
-2.문자 검색 관련 함수
+2)문자 검색 관련 함수
   letters.startswith('a')	->True	(첫 문자가 a인가?)
   
   letters.endswith('z')		->True	(마지막 문자가 z인가?)
@@ -47,7 +47,7 @@ print(letters_join)		->abcd and efghijkl and mnopqrst and uvwxyz (분해된 리�
   
   letters.isalpha()		->False	(letters가 문자로만 이루어 졌는가?)
 
-3문자 변환
+3)문자 변환
   letters.strip(',')		->양끝에서 콤마시퀀스를 삭제
   
   letters.capitalize()		->Abcd,efghijkl,mnopqrst,uvwxyz	(첫번째 단어 대문자로 변경)
