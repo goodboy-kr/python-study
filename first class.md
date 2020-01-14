@@ -120,10 +120,10 @@ name = 'Song'
 sex = 'male'
 print(f'이름은 {name}이고 성별은 {sex}입니다.')
 >>>이름은 Song이고 성별은 male입니다.
-+)큰 따옴표 안에 작은 따옴표를 쓰는것을 이용해서 띄어쓰기나 이상한 문자를 넣을 수도 있다!!
-백준 https://www.acmicpc.net/problem/12606
 
-T = int(input())
-for i in range(1, T+1):
-    ss = input().split()
-    print(f'Case #{i}: {" ".join(reversed(ss))}')
+  +)큰 따옴표 안에 작은 따옴표를 쓰는것을 이용해서 띄어쓰기나 이상한 문자를 넣을 수도 있다!!
+  백준 https://www.acmicpc.net/problem/12606
+  T = int(input())
+  for i in range(1, T+1):
+      ss = input().split()
+      print(f'Case #{i}: {" ".join(reversed(ss))}')
