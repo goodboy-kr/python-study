@@ -108,8 +108,22 @@ list는 [] 괄호 안에 쓰고 첫번째 리스트 값을 0번 오프셋 이라
 
 출력
 -------------
-a, b =1, 3처럼 미지수 2개가 입력 가능
+1.a, b =1, 3처럼 미지수 2개가 입력 가능
 end 를 사용해서 출력끝에 쓴다. 
 while a < 1000:
      print(a, end=',')
      a, b = b, a+b
+     
+     
+2.변수를 출력하고 싶을때
+name = 'Song'
+sex = 'male'
+print(f'이름은 {name}이고 성별은 {sex}입니다.')
+>>>이름은 Song이고 성별은 male입니다.
++)큰 따옴표 안에 작은 따옴표를 쓰는것을 이용해서 띄어쓰기나 이상한 문자를 넣을 수도 있다!!
+백준 https://www.acmicpc.net/problem/12606
+
+T = int(input())
+for i in range(1, T+1):
+    ss = input().split()
+    print(f'Case #{i}: {" ".join(reversed(ss))}')
