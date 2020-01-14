@@ -73,10 +73,14 @@
   import string
   print(string.ascii_uppercase[:])
 
+#second class 01/14
+=============
 리스트
 -------------
-1.
-
+1.오프셋으로 슬라이싱을 나타낼 수 있다.
+  처음이 0번 오프셋, 마지막이 -1번 오프셋
+  squares= [1, 4, 16, 25, 36, 49]
+  squares[1:3]= 4, 16
 2.
 
 3.
