@@ -109,7 +109,16 @@ range(5) = (0,1,2,3,4)      0부터 5전까지 range안에 들어감
 
 range(1,4) = (1,2,3)        끝에거 빼고 1,2,3 이 range안에 들어간다. and 처음에 0말고 -3같은 숫자도 입력가능
 
+range(0, 100, 10) means 0부터 100까지 step은 10으로한다.
+range(0, 100, 10) = (0, 10, 20, 30, 40, ...,90)
 
+
+플러스알파
+seasons = ['Spring', 'Summer', 'Fall', 'Winter']
+print(list(enumerate(seasons)))
+
+출력:
+[(0, 'Spring'), (1, 'Summer'), (2, 'Fall'), (3, 'Winter')]
 
 
 
