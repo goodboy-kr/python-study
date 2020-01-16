@@ -105,6 +105,7 @@ for i,j in a:
 
 range
 -------------
+1) range의 기본
 range(5) = (0,1,2,3,4)      0부터 5전까지 range안에 들어감
 
 range(1,4) = (1,2,3)        끝에거 빼고 1,2,3 이 range안에 들어간다. and 처음에 0말고 -3같은 숫자도 입력가능
@@ -113,13 +114,31 @@ range(0, 100, 10) means 0부터 100까지 step은 10으로한다.
 range(0, 100, 10) = (0, 10, 20, 30, 40, ...,90)
 
 
-플러스알파
+2)플러스알파
 seasons = ['Spring', 'Summer', 'Fall', 'Winter']
 print(list(enumerate(seasons)))
 
 출력:
+
 [(0, 'Spring'), (1, 'Summer'), (2, 'Fall'), (3, 'Winter')]
 
+break
+-------------
+for n in range(2, 10):
+    for x in range(2, n):
+        if n % x == 0:
+            print(n, 'equals', x, '*', n // x)
+            break
+    else:
+        print(n, 'is a prime number')
 
+continue
+-------------
+for num in range(2, 10):
+     if num % 3 == 0:
+         print("Found", num)
+         continue
+     print("not Found", num)
+     
 
 
