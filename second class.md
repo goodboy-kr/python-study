@@ -2,6 +2,32 @@ Second Class
 =============
 if, for, range, break, continue, else
 =============
+자료형
+-------------
+a = ['a', 'b', '3']
+
+b = {'a', 'b', 'c'}
+
+c = ('a', 'b', 'c')
+
+d = {'a' : 'b', 'c': 'd', 'e': 'f'}
+
+print('a는',type(a))
+
+print('b는',type(b))
+
+print('c는',type(c))
+
+print('d는',type(d))
+
+a는 <class 'list'>
+
+b는 <class 'set'>
+
+c는 <class 'tuple'>
+
+d는 <class 'dict'>
+
 if문
 -------------
 x=int(input("숫자 입력 : "))
@@ -48,6 +74,42 @@ for key in {"a":1,"b":2,"c":3}:
 a
 b
 c 가 출력된다.
+
+4)추가내용
+a = [[10, 20], [30, 40], [50, 60]]
+
+for i in a:
+
+    print("i는 ",i)
+    
+    for j in i:
+        print('j는', j, end=' ')
+        
+    print()
+    
+출력:
+i는  [10, 20]
+j는 10 j는 20 
+i는  [30, 40]
+j는 30 j는 40 
+i는  [50, 60]
+j는 50 j는 60 
+
+for i,j in a:
+    print(i,j)
+
+출력 : 
+10 20
+30 40
+50 60
+
+range
+-------------
+range(5) = (0,1,2,3,4)      0부터 5전까지 range안에 들어감
+
+range(1,4) = (1,2,3)        끝에거 빼고 1,2,3 이 range안에 들어간다. and 처음에 0말고 -3같은 숫자도 입력가능
+
+
 
 
 
