@@ -73,18 +73,57 @@
   import string
   print(string.ascii_uppercase[:])
 
+#second class 01/14
+=============
 리스트
 -------------
-1.
+list는 [] 괄호 안에 쓰고 첫번째 리스트 값을 0번 오프셋 이라고 한다.
+1.오프셋으로 슬라이싱을 나타낼 수 있다.
+  처음이 0번 오프셋, 마지막이 -1번 오프셋
+  squares= [1, 4, 16, 25, 36, 49]
+  squares[1:3]= 4, 16
 
-2.
+2.letters['a', 'b', 'c', 'd', 'e', 'f', 'g']
+  letters[2:5] =[]    ->letters의 2~4번 오프셋을 빈공간으로 만듬
+  >>>letters=[a, b, f, g]
+  letters[:]=[]       ->letters를 빈공간으로 만듬
+  >>>letters=[]
 
-3.
+3.list.append() 는 리스트의 끝에 함수를 추가한다.
+  letters.append(x)
+  >>>letters=[a, b, c, d, e, f, g, x]
 
-4.
+4.list(str) 문자열을 리스트로 바꾼다.
+  print(list('cat'))	-> ['c', 'a', 't']  문자열을 리스트로 바꾼후 출력한다.
 
-5.
+5.str.split('') split할 문자열을 기준으로 리스트로 변환한다.
+  birthday = '1/6/1952' 문자열을 리스트로 바꾸는 함수
+  birthday.split('/')	->['1', '6', '1952']	(문자열을 리스트로 만듬)
 
-6.
+6.리스트안에 리스트를 넣을수 있고 이중배열 처럼 나타낼 수 있다.
+  a= ['x', 'y', 'z']
+  b= [1, 2, 3]
+  c=[a, b]
+  c[0][2]= 'z'
 
+출력
+-------------
+1.a, b =1, 3처럼 미지수 2개가 입력 가능
+end 를 사용해서 출력끝에 쓴다. 
+while a < 1000:
+     print(a, end=',')
+     a, b = b, a+b
+     
+     
+2.변수를 출력하고 싶을때
+name = 'Song'
+sex = 'male'
+print(f'이름은 {name}이고 성별은 {sex}입니다.')
+>>>이름은 Song이고 성별은 male입니다.
 
+  +)큰 따옴표 안에 작은 따옴표를 쓰는것을 이용해서 띄어쓰기나 이상한 문자를 넣을 수도 있다!!
+  백준 https://www.acmicpc.net/problem/12606
+  T = int(input())
+  for i in range(1, T+1):
+      ss = input().split()
+      print(f'Case #{i}: {" ".join(reversed(ss))}')
