@@ -11,6 +11,7 @@ else:
         tempmap = list(map(int, input().split()))
         world.append(tempmap)
 
+
 def change(L):
     for i in range(len(L)):
         x= L[i][0]
