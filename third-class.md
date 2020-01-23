@@ -30,7 +30,7 @@ a.union(b)={1,2,3,4,5,6,7}
 
 
 차집합  
-- , difference  
+'-' , difference  
 a-b -> {1,2,3}  
 a.difference(b) -> {1,2,3}  
 
