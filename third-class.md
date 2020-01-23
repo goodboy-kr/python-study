@@ -39,8 +39,24 @@ a.difference(b) -> {1,2,3}
 a^b -> {1,2,3,5,6,7}  
 a.symmetric_difference(b) -> {1,2,3,5,6,7}  
 
-부분집합
-a = {1,2,3}
-b = {1,2,3,4,5}
+부분집합  
+슈퍼셋 : 상위집합 (큰 집합)
+서브셋 : 하위집합 (작은 집합) 
+프로퍼 슈퍼셋 : 진부분집합
 
+a = {1,2,3}
+b = {1,2,3,4,5}  
+서브셋  
+a<=b -> True  
+a.issubset(b) -> True  
+
+프로퍼 서브셋  
+a<b -> True  
+
+슈퍼셋  
+a>=b -> False  
+a.issuperset(b) -> False  
+
+프로퍼 슈퍼셋  
+a>b -> False  
 
