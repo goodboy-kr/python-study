@@ -31,3 +31,14 @@ def outer(a,b):
 outer(4,7)  
 
 ->밖에 있는 거 11  
+
+def outer(x):
+  def inner(y):
+    return "함수 안의 함수 : '%s'" %y    #2)문장을 반환  
+  return (inner(x))                     #1)outer에서 입력한 x를 inner의 파라미터로 사용  
+
+
+sen=outer("안녕")  
+
+print(sen)  
+->함수 안의 함수 : '안녕'  
